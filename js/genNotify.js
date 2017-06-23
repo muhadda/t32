@@ -59,7 +59,7 @@ $(document).ready(function() {
 
             }
             $template.find('.notyName').text(Name);
-			$template.find('.notyRes').text(recurso[random(0,1)]);
+			$template.find('.notyRes').text(recurso[random(0,recurso.lenght-1)]);
 
 
 
