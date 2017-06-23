@@ -5,7 +5,7 @@
 <script type="text/javascript" src="https://muhadda.github.io/t32/js/genNotify.js"></script></html>
 */
 
-var divsnoty = "<div id='notyTemplate' style='display: none'><div><div class='noty_message'><div><i class='fa fa-check-circle ' style='color: #018418;'></i> <span class='notyName yellow' style='font-weight: bold;'>%name%</span> generated <span class='notyMessage'></span> <span class='notyRes'>%res%</span>!</div><div class='noty_close'></div></div></div></div><div id='notyTemplateFail' style='display: none'><div><div class='noty_message'><div><i class='fa fa-exclamation-triangle' style='color: #f12b2b;'></i> <span class='notyName yellow' style='font-weight: bold;'>%name%</span>: Failed Verification</div><div class='noty_close'></div></div></div></div>";
+var divsnoty = "<div id='notyTemplate' style='display: none'><div><div class='noty_message'><div><i class='fa fa-check-circle ' style='color: #018418;'></i> <span class='notyName yellow' style='font-weight: bold;'>%name%</span> generated <span class='notyMessage'></span> <span class='notyRes'>%</span>!</div><div class='noty_close'></div></div></div></div><div id='notyTemplateFail' style='display: none'><div><div class='noty_message'><div><i class='fa fa-exclamation-triangle' style='color: #f12b2b;'></i> <span class='notyName yellow' style='font-weight: bold;'>%name%</span>: Failed Verification</div><div class='noty_close'></div></div></div></div>";
 $("body").append(divsnoty);
 
 function random(min, max) {return Math.floor(Math.random() * (max - min + 1) + min);}
