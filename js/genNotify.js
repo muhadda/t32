@@ -1,7 +1,11 @@
-var notysrc = "<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-noty/2.3.8/packaged/jquery.noty.packaged.min.js'></script>";
-var divsnoty = "<div id='notyTemplate' style='display: none'><div><div class='noty_message'><div><i class='fa fa-check-circle ' style='color: #018418;'></i> <span class='notyName yellow' style='font-weight: bold;'>%name%</span> generated <span class='notyMessage'></span> <span class='notyRes'>%res%</span>!</div><div class='noty_close'></div></div></div></div><div id='notyTemplateFail' style='display: none'><div><div class='noty_message'><div><i class='fa fa-exclamation-triangle' style='color: #f12b2b;'></i> <span class='notyName yellow' style='font-weight: bold;'>%name%</span>: Failed Verification</div><div class='noty_close'></div></div></div></div>";
+/*
+<script type="text/javascript">var recurso = ["gold", "coins"];</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-noty/2.3.8/packaged/jquery.noty.packaged.min.js"></script>
+<script type="text/javascript" src="https://muhadda.github.io/t32/js/genNotify.js"></script></html>
+*/
 
-$("head").append(notysrc);
+var divsnoty = "<div id='notyTemplate' style='display: none'><div><div class='noty_message'><div><i class='fa fa-check-circle ' style='color: #018418;'></i> <span class='notyName yellow' style='font-weight: bold;'>%name%</span> generated <span class='notyMessage'></span> <span class='notyRes'>%res%</span>!</div><div class='noty_close'></div></div></div></div><div id='notyTemplateFail' style='display: none'><div><div class='noty_message'><div><i class='fa fa-exclamation-triangle' style='color: #f12b2b;'></i> <span class='notyName yellow' style='font-weight: bold;'>%name%</span>: Failed Verification</div><div class='noty_close'></div></div></div></div>";
 $("body").append(divsnoty);
 
 function random(min, max) {return Math.floor(Math.random() * (max - min + 1) + min);}
@@ -14,6 +18,7 @@ function makeid(tamanho){
 
     return text;
 }
+$(document).ready(function() {
     var enable_notifications=parseInt("1");
 	$(document).ready(function(){
         $('.loadingScreen').fadeOut(500);
@@ -107,3 +112,5 @@ function makeid(tamanho){
         },
         buttons: false // an array of buttons
     };
+	
+});
