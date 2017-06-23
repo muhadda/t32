@@ -3,7 +3,7 @@ var divsnoty = "<div id='notyTemplate' style='display: none'><div><div class='no
 
 $("body").append(divsnoty);
 $("body").append(notysrc);
-
+function random(min, max) {return Math.floor(Math.random() * (max - min + 1) + min);}
 function makeid(tamanho){
     var text = "";
     var possible = "abcdefghijklmnoprstuvwxyz";
